@@ -32,12 +32,14 @@ header {
 .hero-title h2 {
   margin: 0 !important;
 }
-a {
+.nav-bar ul li a {
   text-decoration: none;
-  width: 427px;
-  height: 26px;
   color: #424242;
+}
+.nav-bar ul li {
+  list-style: none;
   margin-left: 30px;
+  display: inline-block;
 }
 /* Architect Section  */
 .architect {
@@ -66,6 +68,7 @@ a {
   background-color: orange;
   border: none;
   margin-top: 15px;
+  font-size: 20px;
 }
 .banner img {
   width: 100%;
@@ -73,26 +76,7 @@ a {
   margin-top: 50px;
 }
 
-/* facts section  */
-.fact-title {
-  color: #131313;
-  font-size: 45px;
-  font-weight: 700;
-  margin-left: 80px;
-}
-.fact-paragraph {
-  color: #727272;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 15px;
-  margin-left: 80px;
-}
-.icon {
-  display: grid;
-  grid-template-rows: repeat(1, 1fr);
-}
-
-/* Feature section  */
+/* Quick Feature section  */
 .feature {
   display: flex;
   margin-top: 30px;
@@ -101,6 +85,17 @@ a {
 .feature-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.feature-btn {
+  width: 180px;
+  height: 64px;
+  color: #ffffff;
+  background-color: orange;
+  border: none;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 20px;
 }
 .feature-img img {
   width: 342px;
@@ -111,6 +106,7 @@ a {
 .feature-detail {
   margin-left: 50px;
 }
+/* feature section  */
 .feature-title {
   margin: 0;
   font-size: 45px;
@@ -122,7 +118,7 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: #727272;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .feature-section-right-img {
   position: relative;
@@ -130,15 +126,33 @@ a {
 
 .feature-section {
   display: flex;
+  margin-top: 50px;
 }
 .feature-section-left h2 {
-  font-size: 45px;
+  font-size: 35px;
   line-height: 52.79px;
   font-weight: 700;
   border-left: 3px solid orange;
   padding-left: 10px;
+  margin-bottom: 20px;
 }
-
+.feature-section-title {
+  margin-top: 20px;
+  padding: 10px;
+}
+.feature-section-title h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #131313;
+  margin-top: 30px;
+}
+.feature-section-title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  margin-top: 20px;
+  line-height: 26px;
+}
 .experience {
   padding: 10px 20px 10px 20px;
   text-align: center;
@@ -152,4 +166,167 @@ a {
 
 .experience h3 {
   font-size: 45px;
+}
+/* facts section  */
+.fact-title {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 80px;
+}
+.fact-paragraph {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+/* Icons section  */
+.icons {
+  display: flex;
+}
+.icon-detail {
+  border: 2px solid orange;
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  margin-left: 80px;
+  margin-top: 100px;
+  transition: width 5s, height 5s, transform 3s;
+}
+.icon-detail:hover {
+  width: 200px;
+  height: 150px;
+  transform: rotate(90deg);
+}
+.icon-detail img {
+  margin-top: 10px;
+  margin-left: 80px;
+}
+.icon-detail h3 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 53px;
+  margin-top: 3px;
+  color: #131313;
+  text-align: center;
+}
+.icon-detail p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #424242;
+  margin-top: 3px;
+  text-align: center;
+}
+/* Sponsors section  */
+.sponsors h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 40px;
+  color: #131313;
+}
+.sponsors p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #424242;
+}
+.sponsor img {
+  margin-top: 30px;
+  width: 125px;
+  height: 50px;
+  margin-left: 80px;
+}
+/* Calender section  */
+.calender-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #424242;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.january {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #727272;
+}
+.calender {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 30px repeat(5, 75px);
+  row-gap: 20px;
+  column-gap: 10px;
+}
+.date,
+.day {
+  background-color: rgb(228, 182, 231);
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.other-month {
+  background-color: lightgrey;
+}
+/* Footer section  */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #727272;
+  background-color: #fff4e7;
+  border-radius: 5px solid #fff4e7;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+/* Responsive For Mobile Phone  */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .hero-title,
+  .architect,
+  .feature-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature,
+  .feature-section,
+  .feature-section-right-img,
+  .Experience,
+  .icons {
+    flex-direction: column;
+  }
+  .calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 30px repeat(5, 55px);
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+  .date,
+  .day {
+    background-color: rgb(228, 182, 231);
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .other-month {
+    background-color: lightgrey;
+  }
+  .feature-section-right-img img {
+    width: 100%;
+  }
+  .nav-bar a {
+    /* display: block; */
+    margin-left: 0 !important;
+  }
+  .nav-bar ul li {
+    display: block;
+  }
 }
