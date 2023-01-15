@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Header section */
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+header {
+  padding-top: 50px;
+}
+.hero-section {
+  background: rgba(255, 144, 14, 0.1);
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.hero-title {
+  width: 322px;
+  height: 72px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #131313;
+}
+.hero-title h2 {
+  margin: 0 !important;
+}
+a {
+  text-decoration: none;
+  width: 427px;
+  height: 26px;
+  color: #424242;
+  margin-left: 30px;
+}
+/* Architect Section  */
+.architect {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+  margin-top: 43px;
+}
+.architect-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.architect-detail {
+  font-size: 16px;
+  font-weight: 400;
+  color: #131313;
+}
+.architect-btn {
+  width: 180px;
+  height: 64px;
+  margin-left: 45%;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: orange;
+  border: none;
+  margin-top: 15px;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* facts section  */
+.fact-title {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+  margin-left: 80px;
+}
+.fact-paragraph {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-left: 80px;
+}
+.icon {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}
+
+/* Feature section  */
+.feature {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+.feature-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.feature-img img {
+  width: 342px;
+  height: 342px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.feature-detail {
+  margin-left: 50px;
+}
+.feature-title {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52.79px;
+}
+.feature-paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #727272;
+  margin-top: 20px;
+}
+.feature-section-right-img {
+  position: relative;
+}
+
+.feature-section {
+  display: flex;
+}
+.feature-section-left h2 {
+  font-size: 45px;
+  line-height: 52.79px;
+  font-weight: 700;
+  border-left: 3px solid orange;
+  padding-left: 10px;
+}
+
+.experience {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  display: inline-block;
+  background: orange;
+  color: #fff;
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+}
+
+.experience h3 {
+  font-size: 45px;
+}
